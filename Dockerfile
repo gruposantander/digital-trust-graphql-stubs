@@ -4,6 +4,6 @@ RUN npm install -g json-graphql-server
 
 COPY ./data/db.js /tmp
 
-EXPOSE 3000
+EXPOSE 8080
 
-CMD [ "json-graphql-server", "/tmp/db.js" ]
+CMD [ "json-graphql-server", "/tmp/db.js", "-p 8080" ]
