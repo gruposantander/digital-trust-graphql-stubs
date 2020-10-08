@@ -1,0 +1,325 @@
+type Address {
+  id: ID!
+  user_id: ID!
+  ial: String!
+  formatted: String!
+  street_address: String!
+  locality: String!
+  region: String!
+  postal_code: String!
+  country: String!
+  User: User
+}
+
+input AddressFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  user_id: ID
+  ial: String
+  formatted: String
+  street_address: String
+  locality: String
+  region: String
+  postal_code: String
+  country: String
+}
+
+type BankAccount {
+  id: ID!
+  user_id: ID!
+  bankId: String!
+  type: String!
+  entity: String!
+  product: String!
+  country: String!
+  currency: String!
+  ial: String!
+  User: User
+  BankAccountIdentifiers: [BankAccountIdentifier]
+}
+
+input BankAccountFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  user_id: ID
+  bankId: String
+  type: String
+  entity: String
+  product: String
+  country: String
+  currency: String
+  ial: String
+}
+
+type BankAccountIdentifier {
+  id: ID!
+  bank_account_id: ID!
+  type: String!
+  identification: String!
+  BankAccount: BankAccount
+}
+
+input BankAccountIdentifierFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  bank_account_id: ID
+  type: String
+  identification: String
+}
+
+type BusinessBasicDetail {
+  id: ID!
+  user_id: ID!
+  company_registered_name: String!
+  company_trade_name: String!
+  company_type: String!
+  company_start_date: AWSDate!
+  company_end_date: AWSDate!
+  company_country_incorporation: String!
+  ial: String!
+  Users: [User]
+  User: User
+}
+
+input BusinessBasicDetailFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  user_id: ID
+  company_registered_name: String
+  company_trade_name: String
+  company_type: String
+  company_start_date: AWSDate
+  company_end_date: AWSDate
+  company_country_incorporation: String
+  ial: String
+  company_start_date_lt: AWSDate
+  company_start_date_lte: AWSDate
+  company_start_date_gt: AWSDate
+  company_start_date_gte: AWSDate
+  company_end_date_lt: AWSDate
+  company_end_date_lte: AWSDate
+  company_end_date_gt: AWSDate
+  company_end_date_gte: AWSDate
+}
+
+
+type Email {
+  id: ID!
+  user_id: ID!
+  ial: String!
+  value: String!
+  User: User
+}
+
+input EmailFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  user_id: ID
+  ial: String
+  value: String
+}
+
+type Finance {
+  id: ID!
+  user_id: ID!
+  currency: String!
+  total_balance: String!
+  last_year_money_in: String!
+  last_quarter_money_in: String!
+  average_monthly_money_in: String!
+  ial: Int!
+  User: User
+}
+
+input FinanceFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  user_id: ID
+  currency: String
+  total_balance: String
+  last_year_money_in: String
+  last_quarter_money_in: String
+  average_monthly_money_in: String
+  ial: Int
+  ial_lt: Int
+  ial_lte: Int
+  ial_gt: Int
+  ial_gte: Int
+}
+
+type IdDocument {
+  id: ID!
+  user_id: ID!
+  type: String!
+  identification: String!
+  issuer_country: String!
+  ial: String!
+  User: User
+}
+
+input IdDocumentFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  user_id: ID
+  type: String
+  identification: String
+  issuer_country: String
+  ial: String
+}
+
+type ListMetadata {
+  count: Int
+}
+
+type Mutation {
+  createUser(id: ID!, username: String!, personal_basic_detail_id: ID!, business_basic_detail_id: ID): User
+  updateUser(id: ID!, username: String, personal_basic_detail_id: ID, business_basic_detail_id: ID): User
+  removeUser(id: ID!): Boolean
+  createPersonalBasicDetail(id: ID!, user_id: ID!, given_name: String!, family_name: String!, birthdate: AWSDate!, title: String!, gender: String!, civil_status: String!, country_of_birth: String!, nationality: String!, ial: String!): PersonalBasicDetail
+  updatePersonalBasicDetail(id: ID!, user_id: ID, given_name: String, family_name: String, birthdate: AWSDate, title: String, gender: String, civil_status: String, country_of_birth: String, nationality: String, ial: String): PersonalBasicDetail
+  removePersonalBasicDetail(id: ID!): Boolean
+  createBusinessBasicDetail(id: ID!, user_id: ID!, company_registered_name: String!, company_trade_name: String!, company_type: String!, company_start_date: AWSDate!, company_end_date: AWSDate!, company_country_incorporation: String!, ial: String!): BusinessBasicDetail
+  updateBusinessBasicDetail(id: ID!, user_id: ID, company_registered_name: String, company_trade_name: String, company_type: String, company_start_date: AWSDate, company_end_date: AWSDate, company_country_incorporation: String, ial: String): BusinessBasicDetail
+  removeBusinessBasicDetail(id: ID!): Boolean
+  createIdDocument(id: ID!, user_id: ID!, type: String!, identification: String!, issuer_country: String!, ial: String!): IdDocument
+  updateIdDocument(id: ID!, user_id: ID, type: String, identification: String, issuer_country: String, ial: String): IdDocument
+  removeIdDocument(id: ID!): Boolean
+  createAddress(id: ID!, user_id: ID!, ial: String!, formatted: String!, street_address: String!, locality: String!, region: String!, postal_code: String!, country: String!): Address
+  updateAddress(id: ID!, user_id: ID, ial: String, formatted: String, street_address: String, locality: String, region: String, postal_code: String, country: String): Address
+  removeAddress(id: ID!): Boolean
+  createPhoneNumber(id: ID!, user_id: ID!, ial: String!, value: String!): PhoneNumber
+  updatePhoneNumber(id: ID!, user_id: ID, ial: String, value: String): PhoneNumber
+  removePhoneNumber(id: ID!): Boolean
+  createEmail(id: ID!, user_id: ID!, ial: String!, value: String!): Email
+  updateEmail(id: ID!, user_id: ID, ial: String, value: String): Email
+  removeEmail(id: ID!): Boolean
+  createFinance(id: ID!, user_id: ID!, currency: String!, total_balance: String!, last_year_money_in: String!, last_quarter_money_in: String!, average_monthly_money_in: String!, ial: Int!): Finance
+  updateFinance(id: ID!, user_id: ID, currency: String, total_balance: String, last_year_money_in: String, last_quarter_money_in: String, average_monthly_money_in: String, ial: Int): Finance
+  removeFinance(id: ID!): Boolean
+  createBankAccount(id: ID!, user_id: ID!, bankId: String!, type: String!, entity: String!, product: String!, country: String!, currency: String!, ial: String!): BankAccount
+  updateBankAccount(id: ID!, user_id: ID, bankId: String, type: String, entity: String, product: String, country: String, currency: String, ial: String): BankAccount
+  removeBankAccount(id: ID!): Boolean
+  createBankAccountIdentifier(id: ID!, bank_account_id: ID!, type: String!, identification: String!): BankAccountIdentifier
+  updateBankAccountIdentifier(id: ID!, bank_account_id: ID, type: String, identification: String): BankAccountIdentifier
+  removeBankAccountIdentifier(id: ID!): Boolean
+}
+
+type PersonalBasicDetail {
+  id: ID!
+  user_id: ID!
+  given_name: String!
+  family_name: String!
+  birthdate: AWSDate!
+  title: String!
+  gender: String!
+  civil_status: String!
+  country_of_birth: String!
+  nationality: String!
+  ial: String!
+  Users: [User]
+  User: User
+}
+
+input PersonalBasicDetailFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  user_id: ID
+  given_name: String
+  family_name: String
+  birthdate: AWSDate
+  title: String
+  gender: String
+  civil_status: String
+  country_of_birth: String
+  nationality: String
+  ial: String
+  birthdate_lt: AWSDate
+  birthdate_lte: AWSDate
+  birthdate_gt: AWSDate
+  birthdate_gte: AWSDate
+}
+
+type PhoneNumber {
+  id: ID!
+  user_id: ID!
+  ial: String!
+  value: String!
+  User: User
+}
+
+input PhoneNumberFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  user_id: ID
+  ial: String
+  value: String
+}
+
+type Query {
+  User(id: ID!): User
+  allUsers(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: UserFilter): [User]
+  _allUsersMeta(page: Int, perPage: Int, filter: UserFilter): ListMetadata
+  PersonalBasicDetail(id: ID!): PersonalBasicDetail
+  allPersonalBasicDetails(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: PersonalBasicDetailFilter): [PersonalBasicDetail]
+  _allPersonalBasicDetailsMeta(page: Int, perPage: Int, filter: PersonalBasicDetailFilter): ListMetadata
+  BusinessBasicDetail(id: ID!): BusinessBasicDetail
+  allBusinessBasicDetails(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: BusinessBasicDetailFilter): [BusinessBasicDetail]
+  _allBusinessBasicDetailsMeta(page: Int, perPage: Int, filter: BusinessBasicDetailFilter): ListMetadata
+  IdDocument(id: ID!): IdDocument
+  allIdDocuments(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: IdDocumentFilter): [IdDocument]
+  _allIdDocumentsMeta(page: Int, perPage: Int, filter: IdDocumentFilter): ListMetadata
+  Address(id: ID!): Address
+  allAddresses(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: AddressFilter): [Address]
+  _allAddressesMeta(page: Int, perPage: Int, filter: AddressFilter): ListMetadata
+  PhoneNumber(id: ID!): PhoneNumber
+  allPhoneNumbers(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: PhoneNumberFilter): [PhoneNumber]
+  _allPhoneNumbersMeta(page: Int, perPage: Int, filter: PhoneNumberFilter): ListMetadata
+  Email(id: ID!): Email
+  allEmails(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: EmailFilter): [Email]
+  _allEmailsMeta(page: Int, perPage: Int, filter: EmailFilter): ListMetadata
+  Finance(id: ID!): Finance
+  allFinances(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: FinanceFilter): [Finance]
+  _allFinancesMeta(page: Int, perPage: Int, filter: FinanceFilter): ListMetadata
+  BankAccount(id: ID!): BankAccount
+  allBankAccounts(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: BankAccountFilter): [BankAccount]
+  _allBankAccountsMeta(page: Int, perPage: Int, filter: BankAccountFilter): ListMetadata
+  BankAccountIdentifier(id: ID!): BankAccountIdentifier
+  allBankAccountIdentifiers(page: Int, perPage: Int, sortField: String, sortOrder: String, filter: BankAccountIdentifierFilter): [BankAccountIdentifier]
+  _allBankAccountIdentifiersMeta(page: Int, perPage: Int, filter: BankAccountIdentifierFilter): ListMetadata
+}
+
+type User {
+  id: ID!
+  username: String!
+  personal_basic_detail_id: ID!
+  business_basic_detail_id: ID
+  PersonalBasicDetail: PersonalBasicDetail
+  BusinessBasicDetail: BusinessBasicDetail
+  PersonalBasicDetails: [PersonalBasicDetail]
+  BusinessBasicDetails: [BusinessBasicDetail]
+  IdDocuments: [IdDocument]
+  Addresses: [Address]
+  PhoneNumbers: [PhoneNumber]
+  Emails: [Email]
+  Finances: [Finance]
+  BankAccounts: [BankAccount]
+}
+
+input UserFilter {
+  q: String
+  ids: [ID]
+  id: ID
+  username: String
+  personal_basic_detail_id: ID
+  business_basic_detail_id: ID
+}
+

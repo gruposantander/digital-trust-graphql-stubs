@@ -208,6 +208,15 @@ module.exports = {
             last_quarter_money_in: "3000.00",
             average_monthly_money_in: "500.00",
             ial: 3
+        },{
+            id: 5,
+            user_id: 1,
+            currency: "USD",
+            total_balance: "5000.00",
+            last_year_money_in: "40000.00",
+            last_quarter_money_in: "9000.00",
+            average_monthly_money_in: "3000.00",
+            ial: 3
         }
     ],
     bank_accounts: [
