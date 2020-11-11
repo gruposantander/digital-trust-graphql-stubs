@@ -1,0 +1,27 @@
+{
+  "name": "digital-trust-graphql-stubs",
+  "version": "1.0.0",
+  "description": "Digital Trust Protocol Demo GraphQL stubs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gruposantander/digital-trust-graphql-stubs.git"
+  },
+  "author": "Alberto Pulido",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gruposantander/digital-trust-graphql-stubs/issues"
+  },
+  "homepage": "https://github.com/gruposantander/digital-trust-graphql-stubs#readme",
+  "devDependencies": {
+    "json-graphql-server": "^2.1.3"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "express": "^4.17.1"
+  }
+}
