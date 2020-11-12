@@ -77,7 +77,7 @@ fs.readdir(testFolder, (err, files) => {
     addPeople(`${testFolder}${file}`);
 
   });
-  const PORT = 4000;
+  const PORT = process.env["PORT"] || 8080;
   const app = express();
 
   app.use('/graphql', jsonGraphqlExpress.default({

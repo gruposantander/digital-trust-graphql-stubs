@@ -1,9 +1,15 @@
 FROM node:12-alpine
 
-RUN npm install -g json-graphql-server
+WORKDIR /tmp
+RUN mkdir -p /tmp/people
 
-COPY ./data/db.js /tmp
 
-EXPOSE 8080
+COPY server.js /tmp/
+COPY package.json /tmp/
+COPY ./people/* /tmp/people/
 
-CMD [ "json-graphql-server", "/tmp/db.js", "-p 8080" ]
+RUN npm install
+
+ENV PORT=8080
+
+CMD [ "node", "server.js" ]
