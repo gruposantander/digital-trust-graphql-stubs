@@ -60,10 +60,13 @@ function addPeople (filename) {
   })
   // Let's add bank accounts info
   bank_accounts.map(bank => {
-    let {identifier,...bankInfo} = bank;
+    let {identifiers,...bankInfo} = bank;
     let bank_id = ddbb.bank_accounts.push({...bankInfo,user_id : user_id});
     // we don't need to store the id for identifiers collection
-    ddbb.bank_account_identifiers.push({...identifier, bank_account_id: bank_id})
+    identifiers.map( identifier => {
+      ddbb.bank_account_identifiers.push({...identifier, bank_account_id: bank_id})
+    })
+
   });
 
 }

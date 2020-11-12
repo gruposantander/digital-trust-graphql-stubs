@@ -79,10 +79,10 @@
         "product": "Savings Account",
         "country": "GB",
         "currency": "GBP",
-        "identifier": {
+        "identifiers": [{
           "type" : "UK.SortCodeAccountNumber",
           "identification": "5555900072985"
-        }
+        }]
 
     }]
 }
