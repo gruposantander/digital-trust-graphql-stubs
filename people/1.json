@@ -1,19 +1,23 @@
 {
     "username": "Hertha",
-    "family_name": "Bridgwater",
-    "given_name": "Jacquenette",
-    "title": "Honorable",
-    "gender": "Female",
-    "civil_status": "single",
-    "country_of_birth": "CN",
-    "nationality": "BR",
-    "birthdate": "1978-03-01",
-    "company_registered_name": "Hansen Group",
-    "company_trade_name": "Wilderman, Witting and Nolan",
-    "company_type": "Shop",
-    "company_start_date": "2020-06-13",
-    "company_end_date": "2020-10-25",
-    "company_country_incorporation": "ID",
+    "personal_basic_details": {
+      "family_name": "Bridgwater",
+      "given_name": "Jacquenette",
+      "title": "Honorable",
+      "gender": "Female",
+      "civil_status": "single",
+      "country_of_birth": "CN",
+      "nationality": "BR",
+      "birthdate": "1978-03-01"
+    },
+    "business_basic_details" : [{
+      "company_registered_name": "Hansen Group",
+      "company_trade_name": "Wilderman, Witting and Nolan",
+      "company_type": "Shop",
+      "company_start_date": "2020-06-13",
+      "company_end_date": "2020-10-25",
+      "company_country_incorporation": "ID"
+    }],
     "id_documents": [{
         "type": "passport",
         "identification": "Q4279259",

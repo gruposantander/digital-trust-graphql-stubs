@@ -1,1 +1,97 @@
-{"username":"Lynea","birthdate": "1971-02-01","family_name":"Bonfield","given_name":"Arly","title":"Ms","gender":"Female","civil_status":"single","country_of_birth":"PG","nationality":"SE","company_registered_name":"Leannon-Halvorson","company_trade_name":"Treutel, Ortiz and Feest","company_type":"Shop","company_start_date":"2020-02-02","company_end_date":"2020-04-27","company_country_incorporation":"CN","id_documents":[{"type":"passport","identification":"Q4279259","issuer_country":"ES"},{"type":"driving_license","identification":"HIE4240820","issuer_country":"ES"}],"addresses":[{"formatted":"19 Kacey Forest, Redding, QZBAD9, United Kingdom","street_address":"19 Kacey Forest","locality":"Redding","region":"","postal_code":"QZBAD9","country":"United Kingdom"},{"formatted":"19 Kacey Forest, Redding, QZBAD9, United Kingdom","street_address":"19 Kacey Forest","locality":"Redding","region":"","postal_code":"QZBAD9","country":"United Kingdom"}],"phone_numbers":[{"value":"427444444"},{"value":"242055050"}],"emails":[{"value":"t1@test.com"},{"value":"t2@test.com"}],"finances":[{"currency":"GBP","total_balance":"5000.00","last_year_money_in":"40000.00","last_quarter_money_in":"9000.00","average_monthly_money_in":"3000.00"},{"currency":"GBP","total_balance":"15000.00","last_year_money_in":"80000.00","last_quarter_money_in":"20000.00","average_monthly_money_in":"5000.00"}],"bank_accounts":[{"bankId":"09012700047186","type":"Personal","entity":"Bank A","product":"Current Account","country":"GB","currency":"GBP"},{"bankId":"06089900072985","type":"Personal","entity":"Bank B","product":"Current Account","country":"GB","currency":"GBP"}],"bank_account_identifiers":[{"type":"UK.SortCodeAccountNumber","identification":"06089900072985"},{"type":"UK.SortCodeAccountNumber","identification":"09012700055123"}]}
+{
+    "username": "Pablo",
+    "personal_basic_details": {
+      "family_name": "Bridgwater",
+      "given_name": "Jacquenette",
+      "title": "Mr",
+      "gender": "Male",
+      "civil_status": "single",
+      "country_of_birth": "ES",
+      "nationality": "BR",
+      "birthdate": "1980-05-01"
+    },
+    "business_basic_details" : [{
+      "company_registered_name": "Flaten Group",
+      "company_trade_name": "Flaten Group Corp",
+      "company_type": "Shop",
+      "company_start_date": "2018-06-13",
+      "company_end_date": "2020-10-25",
+      "company_country_incorporation": "ES"
+    },{
+      "company_registered_name": "George Group",
+      "company_trade_name": "George Group Corp",
+      "company_type": "Shop",
+      "company_start_date": "2014-06-13",
+      "company_end_date": "2018-10-22",
+      "company_country_incorporation": "ES"
+    }],
+    "id_documents": [{
+        "type": "passport",
+        "identification": "Q4279259",
+        "issuer_country": "ES"
+    }, {
+        "type": "driving_license",
+        "identification": "HIE4240820",
+        "issuer_country": "ES"
+    }],
+    "addresses": [{
+        "formatted": "19 Kacey Forest, Redding, QZBAD9, United Kingdom",
+        "street_address": "19 Kacey Forest",
+        "locality": "Redding",
+        "region": "",
+        "postal_code": "QZBAD9",
+        "country": "United Kingdom"
+    }, {
+        "formatted": "19 Kacey Forest, Redding, QZBAD9, United Kingdom",
+        "street_address": "19 Kacey Forest",
+        "locality": "Redding",
+        "region": "",
+        "postal_code": "QZBAD9",
+        "country": "United Kingdom"
+    }],
+    "phone_numbers": [{
+        "value": "427444444"
+    }, {
+        "value": "242055050"
+    }],
+    "emails": [{
+        "value": "t1@test.com"
+    }, {
+        "value": "t2@test.com"
+    }],
+    "finances": [{
+        "currency": "GBP",
+        "total_balance": "5000.00",
+        "last_year_money_in": "40000.00",
+        "last_quarter_money_in": "9000.00",
+        "average_monthly_money_in": "3000.00"
+    }, {
+        "currency": "GBP",
+        "total_balance": "15000.00",
+        "last_year_money_in": "80000.00",
+        "last_quarter_money_in": "20000.00",
+        "average_monthly_money_in": "5000.00"
+    }],
+    "bank_accounts": [{
+        "bankId": "09012700047186",
+        "type": "Personal",
+        "entity": "Bank A",
+        "product": "Current Account",
+        "country": "GB",
+        "currency": "GBP"
+    }, {
+        "bankId": "06089900072985",
+        "type": "Personal",
+        "entity": "Bank B",
+        "product": "Current Account",
+        "country": "GB",
+        "currency": "GBP"
+    }],
+    "bank_account_identifiers": [{
+        "type": "UK.SortCodeAccountNumber",
+        "identification": "06089900072985"
+    }, {
+        "type": "UK.SortCodeAccountNumber",
+        "identification": "09012700055123"
+    }]
+}
