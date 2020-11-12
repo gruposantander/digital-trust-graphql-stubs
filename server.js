@@ -37,21 +37,21 @@ function addPeople (filename) {
   let user_id = ddbb.users.push({ username : username});
 
   let UserDataArr = Object.keys(ddbb).filter(key => !/(bank_|users)/.test(key) );
-  // Fill user's data
+  // Fill user's data (personal_basic_details & business_basic_details have to be an object)
   UserDataArr.map(k => {
-      if (k === "personal_basic_details") {
+      if (/(personal_basic_details|business_basic_details)/.test(k)) {
         // This set of data is unique (only one object)
-        ddbb.personal_basic_details.push({
-          ...data[k],
-          birthdate : new Date(data[k].birthdate),
+        let doc = {...data[k]};
+        // Fix date fields if any
+        Object.keys(doc).filter(field => /date/i.test(field)).map(f => {
+          doc[f] = new Date(doc[f]);
+        })
+        ddbb[k].push({
+          ...doc,
           user_id: user_id});
       } else {
         // This set of data has to be an array
         data[k].map(doc => {
-          // Fix date fields if any
-          Object.keys(doc).filter(field => /date/i.test(field)).map(f => {
-            doc[f] = new Date(doc[f]);
-          })
           ddbb[k].push({
             ...doc,
             user_id: user_id});
@@ -93,5 +93,5 @@ fs.readdir(testFolder, (err, files) => {
     bank_account_identifiers: [...ddbb.bank_account_identifiers.values()]
   }));
   app.listen(PORT);
-  //console.log(ddbb);
+  console.log(ddbb);
 });

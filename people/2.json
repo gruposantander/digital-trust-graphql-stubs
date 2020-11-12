@@ -10,21 +10,14 @@
       "nationality": "BR",
       "birthdate": "1980-05-01"
     },
-    "business_basic_details" : [{
+    "business_basic_details" : {
       "company_registered_name": "Flaten Group",
       "company_trade_name": "Flaten Group Corp",
       "company_type": "Shop",
       "company_start_date": "2018-06-13",
       "company_end_date": "2020-10-25",
       "company_country_incorporation": "ES"
-    },{
-      "company_registered_name": "George Group",
-      "company_trade_name": "George Group Corp",
-      "company_type": "Shop",
-      "company_start_date": "2014-06-13",
-      "company_end_date": "2018-10-22",
-      "company_country_incorporation": "ES"
-    }],
+    },
     "id_documents": [{
         "type": "passport",
         "identification": "Q4279259",
