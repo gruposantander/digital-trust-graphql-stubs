@@ -49,14 +49,18 @@ function addPeople (filename) {
     bank_account_identifiers,
     ...basic_data} = require(filename);
   let user_id = ddbb.users.push({ username : username});
-  ddbb.personal_basic_details.push({...basic_data,user_id: user_id});
+  ddbb.personal_basic_details.push({
+    ...basic_data,
+    birthdate: new Date(basic_data.birthdate),
+    user_id: user_id
+  });
   ddbb.business_basic_details.push({
     company_type,
-    company_start_date,
-    company_end_date,
     company_trade_name,
     company_registered_name,
     company_country_incorporation,
+    company_start_date: new Date(company_start_date),
+    company_end_date: new Date(company_start_date),
     user_id: user_id
   })
   id_documents.map(doc => {
@@ -106,4 +110,5 @@ fs.readdir(testFolder, (err, files) => {
     bank_account_identifiers: [...ddbb.bank_account_identifiers.values()]
   }));
   app.listen(PORT);
+  //console.log(ddbb);
 });
