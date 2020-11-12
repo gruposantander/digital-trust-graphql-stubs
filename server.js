@@ -33,16 +33,20 @@ const ddbb = {
 
 
 function addPeople (filename) {
-  let {username,...data} = require(filename);
+  let {username,bank_accounts,...data} = require(filename);
   let user_id = ddbb.users.push({ username : username});
-  Object.keys(ddbb).map(k => {
-    if(k !== "users") {
+
+  let UserDataArr = Object.keys(ddbb).filter(key => !/(bank_|users)/.test(key) );
+  // Fill user's data
+  UserDataArr.map(k => {
       if (k === "personal_basic_details") {
+        // This set of data is unique (only one object)
         ddbb.personal_basic_details.push({
           ...data[k],
           birthdate : new Date(data[k].birthdate),
           user_id: user_id});
       } else {
+        // This set of data has to be an array
         data[k].map(doc => {
           // Fix date fields if any
           Object.keys(doc).filter(field => /date/i.test(field)).map(f => {
@@ -53,8 +57,14 @@ function addPeople (filename) {
             user_id: user_id});
         })
       }
-    }
   })
+  // Let's add bank accounts info
+  bank_accounts.map(bank => {
+    let {identifier,...bankInfo} = bank;
+    let bank_id = ddbb.bank_accounts.push({...bankInfo,user_id : user_id});
+    // we don't need to store the id for identifiers collection
+    ddbb.bank_account_identifiers.push({...identifier, bank_account_id: bank_id})
+  });
 
 }
 
@@ -80,5 +90,5 @@ fs.readdir(testFolder, (err, files) => {
     bank_account_identifiers: [...ddbb.bank_account_identifiers.values()]
   }));
   app.listen(PORT);
-  console.log(ddbb);
+  //console.log(ddbb);
 });

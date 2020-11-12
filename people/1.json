@@ -71,20 +71,22 @@
         "entity": "Bank A",
         "product": "Current Account",
         "country": "GB",
-        "currency": "GBP"
+        "currency": "GBP",
+        "identifier": {
+          "type" : "UK.SortCodeAccountNumber",
+          "identification": "06089900072985"
+        }
+
     }, {
         "bankId": "06089900072985",
         "type": "Personal",
         "entity": "Bank B",
         "product": "Current Account",
         "country": "GB",
-        "currency": "GBP"
-    }],
-    "bank_account_identifiers": [{
-        "type": "UK.SortCodeAccountNumber",
-        "identification": "06089900072985"
-    }, {
-        "type": "UK.SortCodeAccountNumber",
-        "identification": "09012700055123"
+        "currency": "GBP",
+        "identifier" : {
+            "type": "UK.SortCodeAccountNumber",
+            "identification": "09012700055123"
+        }
     }]
 }

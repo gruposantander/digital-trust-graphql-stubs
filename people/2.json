@@ -75,23 +75,14 @@
     "bank_accounts": [{
         "bankId": "09012700047186",
         "type": "Personal",
-        "entity": "Bank A",
-        "product": "Current Account",
+        "entity": "Bank F",
+        "product": "Savings Account",
         "country": "GB",
-        "currency": "GBP"
-    }, {
-        "bankId": "06089900072985",
-        "type": "Personal",
-        "entity": "Bank B",
-        "product": "Current Account",
-        "country": "GB",
-        "currency": "GBP"
-    }],
-    "bank_account_identifiers": [{
-        "type": "UK.SortCodeAccountNumber",
-        "identification": "06089900072985"
-    }, {
-        "type": "UK.SortCodeAccountNumber",
-        "identification": "09012700055123"
+        "currency": "GBP",
+        "identifier": {
+          "type" : "UK.SortCodeAccountNumber",
+          "identification": "5555900072985"
+        }
+
     }]
 }
