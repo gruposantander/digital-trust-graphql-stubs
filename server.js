@@ -67,18 +67,18 @@ fs.readdir(testFolder, (err, files) => {
   const PORT = 4000;
   const app = express();
 
-  // app.use('/graphql', jsonGraphqlExpress.default({
-  //   users: [...ddbb.users.values()],
-  //   personal_basic_details: [...ddbb.personal_basic_details.values()],
-  //   business_basic_details: [...ddbb.business_basic_details.values()],
-  //   id_documents: [...ddbb.id_documents.values()],
-  //   addresses: [...ddbb.addresses.values()],
-  //   phone_numbers: [...ddbb.phone_numbers.values()],
-  //   emails: [...ddbb.emails.values()],
-  //   finances: [...ddbb.finances.values()],
-  //   bank_accounts: [...ddbb.bank_accounts.values()],
-  //   bank_account_identifiers: [...ddbb.bank_account_identifiers.values()]
-  // }));
-  // app.listen(PORT);
+  app.use('/graphql', jsonGraphqlExpress.default({
+    users: [...ddbb.users.values()],
+    personal_basic_details: [...ddbb.personal_basic_details.values()],
+    business_basic_details: [...ddbb.business_basic_details.values()],
+    id_documents: [...ddbb.id_documents.values()],
+    addresses: [...ddbb.addresses.values()],
+    phone_numbers: [...ddbb.phone_numbers.values()],
+    emails: [...ddbb.emails.values()],
+    finances: [...ddbb.finances.values()],
+    bank_accounts: [...ddbb.bank_accounts.values()],
+    bank_account_identifiers: [...ddbb.bank_account_identifiers.values()]
+  }));
+  app.listen(PORT);
   console.log(ddbb);
 });
