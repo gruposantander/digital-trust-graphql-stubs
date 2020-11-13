@@ -33,8 +33,8 @@ const ddbb = {
 
 
 function addPeople (filename) {
-  let {username,bank_accounts,...data} = require(filename);
-  let user_id = ddbb.users.push({ username : username});
+  let {username,bio,description,status,segment,ocupation,bank_accounts,...data} = require(filename);
+  let user_id = ddbb.users.push({ username, bio, description, status, segment, ocupation,});
 
   let UserDataArr = Object.keys(ddbb).filter(key => !/(bank_|users)/.test(key) );
   // Fill user's data (personal_basic_details & business_basic_details have to be an object)

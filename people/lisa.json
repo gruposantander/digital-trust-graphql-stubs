@@ -1,0 +1,129 @@
+{
+    "username": "lisa",
+    "description": "Starting out",
+    "status": "Living with Partner",
+    "segment": "Pre School Parents",
+    "occupation": "Teacher",
+    "bio": "Lisa is currently renting although some of her friends have a mortgage. Her incomes is well above the national average since she is earlier in her career. She is saving for a deposit but the amount she can save is limited by high outgoings from rent and her aspirational lifestyle. She spends more time than most on-line. Being computer savvy and time poor, she prefers to both manage and arrange products on-line where possible.",
+    "personal_basic_details": {
+        "family_name": "West",
+        "given_name": "Lisa",
+        "title": "Mrs",
+        "gender": "Female",
+        "civil_status": "single",
+        "country_of_birth": "GB",
+        "nationality": "GB",
+        "birthdate": "1985-11-13",
+        "ial": "2"
+    },
+    "business_basic_details": {
+        "company_registered_name": "Crafton School",
+        "company_trade_name": "Flaten Group Corp",
+        "company_type": "Education",
+        "company_start_date": "2015-06-13",
+        "company_country_incorporation": "GB",
+        "ial": "3"
+    },
+    "id_documents": [
+        {
+            "type": "passport",
+            "identification": "HWYY8XO6GS",
+            "issuer_country": "GB",
+            "ial": "3"
+        },
+        {
+            "type": "driving_license",
+            "identification": "HIE4240820",
+            "issuer_country": "GB",
+            "ial": "2"
+        }
+    ],
+    "addresses": [
+        {
+            "formatted": "68 Schroeder Unions, 4RRYLB, Manchester, United Kingdom",
+            "street_address": "68 Schroeder Unions",
+            "locality": "Manchester",
+            "region": "",
+            "postal_code": "4RRYLB",
+            "country": "United Kingdom",
+            "ial": "2"
+        }
+    ],
+    "phone_numbers": [
+        {
+            "value": "427444444",
+            "ial": "2"
+        },
+        {
+            "value": "242055050",
+            "ial": "1"
+        }
+    ],
+    "emails": [
+        {
+            "value": "t1@test.com",
+            "ial": "2"
+        },
+        {
+            "value": "t2@test.com",
+            "ial": "1"
+        }
+    ],
+    "finances": [
+        {
+            "currency": "GBP",
+            "total_balance": "7514.75",
+            "last_year_money_in": "22484.63",
+            "last_quarter_money_in": "5760.345",
+            "average_monthly_money_in": "2044.05",
+            "ial": "3"
+        }
+    ],
+    "bank_accounts": [
+        {
+            "bankId": "9833576647450",
+            "type": "Personal",
+            "entity": "Bank F",
+            "product": "Everyday Account",
+            "country": "GB",
+            "currency": "GBP",
+            "ial": "3",
+            "identifiers": [
+                {
+                    "type": "UK.SortCodeAccountNumber",
+                    "identification": "9833576647450"
+                }
+            ]
+        },
+        {
+            "bankId": "09833576647451",
+            "type": "Personal",
+            "entity": "Bank F",
+            "product": "Current Account",
+            "country": "GB",
+            "currency": "GBP",
+            "ial": "3",
+            "identifiers": [
+                {
+                    "type": "UK.SortCodeAccountNumber",
+                    "identification": "09833576647451"
+                }
+            ]
+        },
+        {
+            "bankId": "09580861743705",
+            "type": "Personal",
+            "entity": "Bank F",
+            "product": "Current Account",
+            "country": "GB",
+            "currency": "GBP",
+            "ial": "3",
+            "identifiers": [
+                {
+                    "type": "UK.SortCodeAccountNumber",
+                    "identification": "09580861743705"
+                }
+            ]
+        }
+    ]
+}

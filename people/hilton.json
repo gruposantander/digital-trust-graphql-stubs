@@ -1,34 +1,30 @@
 {
-    "username": "Hertha",
+    "username": "hilton",
+    "description": "Parent with Three Children",
+    "status": "Living with Partner",
+    "segment": "Pre School Parents",
+    "occupation": "Teacher",
+    "bio": "bla bla bla",
     "personal_basic_details": {
-      "family_name": "Bridgwater",
-      "given_name": "Jacquenette",
-      "title": "Honorable",
+      "given_name":  "Yost",
+      "family_name": "Hilton",
+      "birthdate": "1985-05-22",
+      "title": "Mr",
       "gender": "Female",
-      "civil_status": "single",
-      "country_of_birth": "CN",
-      "nationality": "BR",
-      "birthdate": "1978-03-01",
-      "ial" : "2"
-    },
-    "business_basic_details" : {
-      "company_registered_name": "Hansen Group",
-      "company_trade_name": "Wilderman, Witting and Nolan",
-      "company_type": "Shop",
-      "company_start_date": "2020-06-13",
-      "company_end_date": "2020-10-25",
-      "company_country_incorporation": "ID",
-      "ial" : "3"
+      "civil_status": "married",
+      "country_of_birth": "GB",
+      "nationality": "GB",
+      "ial": "2"
     },
     "id_documents": [{
         "type": "passport",
-        "identification": "Q4279259",
-        "issuer_country": "ES",
+        "identification": "SQ8RN5LX1",
+        "issuer_country": "GB",
         "ial" : "3"
     }, {
         "type": "driving_license",
-        "identification": "HIE4240820",
-        "issuer_country": "ES",
+        "identification": "HILT131123131206",
+        "issuer_country": "GB",
         "ial" : "2"
     }],
     "addresses": [{
@@ -39,14 +35,14 @@
         "postal_code": "QZBAD9",
         "country": "United Kingdom",
         "ial" : "2"
-    }, {
-        "formatted": "19 Kacey Forest, Redding, QZBAD9, United Kingdom",
-        "street_address": "19 Kacey Forest",
-        "locality": "Redding",
+    },{
+        "ial": "1",
+        "formatted": "33 Mountain, Lockhill, LH1AB8, United Kingdom",
+        "street_address": "Lockhill",
+        "locality": "33 Mountain",
         "region": "",
-        "postal_code": "QZBAD9",
-        "country": "United Kingdom",
-        "ial" : "1"
+        "postal_code": "LH1AB8",
+        "country": "United Kingdom"
     }],
     "phone_numbers": [{
         "value": "427444444",
@@ -64,18 +60,18 @@
     }],
     "finances": [{
         "currency": "GBP",
-        "total_balance": "5000.00",
-        "last_year_money_in": "40000.00",
-        "last_quarter_money_in": "9000.00",
-        "average_monthly_money_in": "3000.00",
+        "total_balance": "22511.01",
+        "last_year_money_in": "18049.75",
+        "last_quarter_money_in": "16526.27",
+        "average_monthly_money_in": "1640.88",
         "ial" : "3"
     }, {
-        "currency": "GBP",
+        "currency": "EUR",
         "total_balance": "15000.00",
-        "last_year_money_in": "80000.00",
-        "last_quarter_money_in": "20000.00",
-        "average_monthly_money_in": "5000.00",
-        "ial" : "3"
+        "last_year_money_in": "8000.00",
+        "last_quarter_money_in": "2000.00",
+        "average_monthly_money_in": "500.00",
+        "ial" : "2"
     }],
     "bank_accounts": [{
         "bankId": "09012700047186",

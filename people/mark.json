@@ -1,0 +1,115 @@
+{
+    "username": "mark",
+    "description": "Retired - Low income",
+    "status": "Retired",
+    "segment": "Retired",
+    "occupation": "N/A",
+    "bio": "Mark is 65 years old and has recently retired. He has saved for his retirement throughout his career and no longer pays his mortgage. He doesn&apos;t have a lot of savings but his spending is also low. He likes to spend with cash and doesn&apos;t purchase a lot of items online.",
+    "personal_basic_details": {
+        "family_name": "West",
+        "given_name": "Mark",
+        "title": "Mr",
+        "gender": "Male",
+        "civil_status": "single",
+        "country_of_birth": "GB",
+        "nationality": "GB",
+        "birthdate": "1955-11-13",
+        "ial": "2"
+    },
+    "business_basic_details": {
+        "company_registered_name": "Flaten Group",
+        "company_trade_name": "Flaten Group Corp",
+        "company_type": "Shop",
+        "company_start_date": "2018-06-13",
+        "company_end_date": "2020-10-25",
+        "company_country_incorporation": "GB",
+        "ial": "3"
+    },
+    "id_documents": [
+        {
+            "type": "passport",
+            "identification": "KQQIDEZ6UR",
+            "issuer_country": "GB",
+            "ial": "3"
+        },
+        {
+            "type": "driving_license",
+            "identification": "HIE4240820",
+            "issuer_country": "GB",
+            "ial": "2"
+        }
+    ],
+    "addresses": [
+        {
+            "formatted": "Emmerich Manor, RKKV87, Reading, United Kingdom",
+            "street_address": "51 Emmerich Manor",
+            "locality": "Reading",
+            "region": "",
+            "postal_code": "RKKV87",
+            "country": "United Kingdom",
+            "ial": "2"
+        }
+    ],
+    "phone_numbers": [
+        {
+            "value": "427444444",
+            "ial": "2"
+        },
+        {
+            "value": "242055050",
+            "ial": "1"
+        }
+    ],
+    "emails": [
+        {
+            "value": "t1@test.com",
+            "ial": "2"
+        },
+        {
+            "value": "t2@test.com",
+            "ial": "1"
+        }
+    ],
+    "finances": [
+        {
+            "currency": "GBP",
+            "total_balance": "7514.75",
+            "last_year_money_in": "7170.00",
+            "last_quarter_money_in": "4023.00",
+            "average_monthly_money_in": "651.73",
+            "ial": "3"
+        }
+    ],
+    "bank_accounts": [
+        {
+            "bankId": "21052612410020",
+            "type": "Personal",
+            "entity": "Bank F",
+            "product": "Savings Account",
+            "country": "GB",
+            "currency": "GBP",
+            "ial": "3",
+            "identifiers": [
+                {
+                    "type": "UK.SortCodeAccountNumber",
+                    "identification": "21052612410020"
+                }
+            ]
+        },
+        {
+            "bankId": "92460371759896",
+            "type": "Personal",
+            "entity": "Bank F",
+            "product": "Current Account",
+            "country": "GB",
+            "currency": "GBP",
+            "ial": "3",
+            "identifiers": [
+                {
+                    "type": "UK.SortCodeAccountNumber",
+                    "identification": "92460371759896"
+                }
+            ]
+        }
+    ]
+}
