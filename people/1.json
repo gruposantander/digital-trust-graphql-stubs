@@ -8,7 +8,8 @@
       "civil_status": "single",
       "country_of_birth": "CN",
       "nationality": "BR",
-      "birthdate": "1978-03-01"
+      "birthdate": "1978-03-01",
+      "ial" : "2"
     },
     "business_basic_details" : {
       "company_registered_name": "Hansen Group",
@@ -16,16 +17,19 @@
       "company_type": "Shop",
       "company_start_date": "2020-06-13",
       "company_end_date": "2020-10-25",
-      "company_country_incorporation": "ID"
+      "company_country_incorporation": "ID",
+      "ial" : "3"
     },
     "id_documents": [{
         "type": "passport",
         "identification": "Q4279259",
-        "issuer_country": "ES"
+        "issuer_country": "ES",
+        "ial" : "3"
     }, {
         "type": "driving_license",
         "identification": "HIE4240820",
-        "issuer_country": "ES"
+        "issuer_country": "ES",
+        "ial" : "2"
     }],
     "addresses": [{
         "formatted": "19 Kacey Forest, Redding, QZBAD9, United Kingdom",
@@ -33,37 +37,45 @@
         "locality": "Redding",
         "region": "",
         "postal_code": "QZBAD9",
-        "country": "United Kingdom"
+        "country": "United Kingdom",
+        "ial" : "2"
     }, {
         "formatted": "19 Kacey Forest, Redding, QZBAD9, United Kingdom",
         "street_address": "19 Kacey Forest",
         "locality": "Redding",
         "region": "",
         "postal_code": "QZBAD9",
-        "country": "United Kingdom"
+        "country": "United Kingdom",
+        "ial" : "1"
     }],
     "phone_numbers": [{
-        "value": "427444444"
+        "value": "427444444",
+        "ial" : "2"
     }, {
-        "value": "242055050"
+        "value": "242055050",
+        "ial" : "1"
     }],
     "emails": [{
-        "value": "t1@test.com"
+        "value": "t1@test.com",
+        "ial" : "2"
     }, {
-        "value": "t2@test.com"
+        "value": "t2@test.com",
+        "ial" : "1"
     }],
     "finances": [{
         "currency": "GBP",
         "total_balance": "5000.00",
         "last_year_money_in": "40000.00",
         "last_quarter_money_in": "9000.00",
-        "average_monthly_money_in": "3000.00"
+        "average_monthly_money_in": "3000.00",
+        "ial" : "3"
     }, {
         "currency": "GBP",
         "total_balance": "15000.00",
         "last_year_money_in": "80000.00",
         "last_quarter_money_in": "20000.00",
-        "average_monthly_money_in": "5000.00"
+        "average_monthly_money_in": "5000.00",
+        "ial" : "3"
     }],
     "bank_accounts": [{
         "bankId": "09012700047186",
@@ -72,6 +84,7 @@
         "product": "Current Account",
         "country": "GB",
         "currency": "GBP",
+        "ial" : "3",
         "identifiers": [{
           "type" : "UK.SortCodeAccountNumber",
           "identification": "06089900072985"
@@ -88,6 +101,7 @@
         "product": "Current Account",
         "country": "GB",
         "currency": "GBP",
+        "ial" : "3",
         "identifiers" : [{
             "type": "UK.SortCodeAccountNumber",
             "identification": "09012700055123"
