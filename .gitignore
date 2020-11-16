@@ -42,8 +42,10 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-*.sh
+
 
 # System Files
 .DS_Store
 Thumbs.db
+build-and-push-github.sh
+build-and-push-openshift.sh
