@@ -10,6 +10,6 @@ COPY ./people/* /tmp/people/
 
 RUN npm install
 
-ENV PORT=8080
+EXPOSE 8080
 
 CMD [ "node", "server.js" ]

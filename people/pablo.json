@@ -1,5 +1,10 @@
 {
     "username": "pablo",
+    "description": "Starting out",
+    "status": "Working Parent of onw children",
+    "segment": "Middle",
+    "occupation": "Software Developer",
+    "bio": "Pablo is a starting out his career after taking a change in his life and getting a software development master. He has a medium salary and pays with card mostly online shopping. He is saving to pay the initial payment needed to move to another house",
     "personal_basic_details": {
         "family_name": "Luna",
         "given_name": "Pablo",

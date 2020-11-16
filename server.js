@@ -80,7 +80,7 @@ fs.readdir(testFolder, (err, files) => {
   const PORT = process.env["PORT"] || 8080;
   const app = express();
 
-  app.use('/graphql', jsonGraphqlExpress.default({
+  app.use('/', jsonGraphqlExpress.default({
     users: [...ddbb.users.values()],
     personal_basic_details: [...ddbb.personal_basic_details.values()],
     business_basic_details: [...ddbb.business_basic_details.values()],

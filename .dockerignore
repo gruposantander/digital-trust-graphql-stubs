@@ -8,3 +8,4 @@ src
 coverage
 .vscode
 .env
+.sh
