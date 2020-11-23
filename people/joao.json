@@ -1,7 +1,7 @@
 
 {
     "username": "joao",
-    "description": "Small Business",
+    "description": "Ocassional independent job",
     "status": "Active",
     "segment": "Journalism",
     "occupation": "N/A",
@@ -63,7 +63,7 @@
             "last_year_money_in": "4800.67",
             "last_quarter_money_in": "2010.56",
             "average_monthly_money_in": "1700.97",
-            "ial": "3"
+            "ial": "1"
         }
     ],
     "bank_accounts": []
