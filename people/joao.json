@@ -1,0 +1,70 @@
+
+{
+    "username": "joao",
+    "description": "Small Business",
+    "status": "Active",
+    "segment": "Journalism",
+    "occupation": "N/A",
+    "bio": "Joao is a young journalist, without a bank account who works in a little local news agency",
+    "personal_basic_details": {
+        "family_name": "Silva",
+        "given_name": "Joao",
+        "title": "Mr",
+        "gender": "Male",
+        "civil_status": "single",
+        "country_of_birth": "BR",
+        "nationality": "BR",
+        "birthdate": "1998-10-15",
+        "ial": "3"
+    },
+    "business_basic_details": {
+        "company_registered_name": "Diário Campina",
+        "company_trade_name": "Diário Campina",
+        "company_type": "News agency",
+        "company_start_date": "2018-01-10",
+        "company_country_incorporation": "BR",
+        "ial": "3"
+    },
+    "id_documents": [
+        {
+            "type": "passport",
+            "identification": "A52493BRX",
+            "issuer_country": "BR",
+            "ial": "3"
+        },
+    ],
+    "addresses": [
+        {
+            "formatted": "Rua Luiz Chiodetto 22, 13096-730, Campinas, Brazil",
+            "street_address": "Rua Luiz Chiodetto 22",
+            "locality": "Reading",
+            "region": "",
+            "postal_code": "13096-730",
+            "country": "Brazil",
+            "ial": "2"
+        }
+    ],
+    "phone_numbers": [
+        {
+            "value": "4274194447",
+            "ial": "2"
+        }
+    ],
+    "emails": [
+        {
+            "value": "joaosilva@diariocampina.br",
+            "ial": "2"
+        }
+    ],
+    "finances": [
+        {
+            "currency": "BRL",
+            "total_balance": "1200.34",
+            "last_year_money_in": "4800.67",
+            "last_quarter_money_in": "2010.56",
+            "average_monthly_money_in": "1700.97",
+            "ial": "3"
+        }
+    ],
+    "bank_accounts": []
+}
