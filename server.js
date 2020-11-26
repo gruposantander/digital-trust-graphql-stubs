@@ -28,7 +28,8 @@ const ddbb = {
     emails: new Proxy([],proxyHandlerObj),
     finances: new Proxy([],proxyHandlerObj),
     bank_accounts: new Proxy([],proxyHandlerObj),
-    bank_account_identifiers: new Proxy([],proxyHandlerObj)
+    bank_account_identifiers: new Proxy([],proxyHandlerObj),
+    proofs: new Proxy([],proxyHandlerObj)
 };
 
 
@@ -90,7 +91,8 @@ fs.readdir(testFolder, (err, files) => {
     emails: [...ddbb.emails.values()],
     finances: [...ddbb.finances.values()],
     bank_accounts: [...ddbb.bank_accounts.values()],
-    bank_account_identifiers: [...ddbb.bank_account_identifiers.values()]
+    bank_account_identifiers: [...ddbb.bank_account_identifiers.values()],
+    proofs: [...ddbb.proofs.values()]
   }));
   app.listen(PORT);
   console.log(ddbb);
